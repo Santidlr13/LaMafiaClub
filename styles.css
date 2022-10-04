@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Inspiration';
+    src: url(./font/OleoScriptSwashCaps-Regular.ttf) format('truetype');
+}
+
+* {
+    text-align: center;
+    font-family: 'Inspiration';
+}
+
+.header {
+    background-image: url(./brickwallimg.jpg);
+    background-size: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.2rem solid grey;
+    padding: 2rem 2rem;
+    color: white;
+}
+
+.header h1 {
+    font-size: 3rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar p {
+    width: 8rem;
+    font-size: 1.2rem;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+h2 {
+    margin: 5rem auto;
+}
+
+.conditions {
+    display: flex;
+}
+
+.conditions p {
+    padding: 1rem 15rem;
+    text-align: left;
+}
+
+span.exclamation {
+    justify-items: left;
+    margin-left: 4rem;
+    padding: 0;
+    position: absolute;
+    font-size: 300px;
+    opacity: 0.3;
+}
+
+.boardtitle {
+    padding: 2rem auto;
+}
+
+.board {
+    background-image: url(./mafia-background.jpg);
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.member {
+    padding: 3rem 1rem;
+    display: block;
+}
+
+.member img {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 15rem;
+}
+
+.apply-container {
+    display: flex;
+    justify-content: left;
+    margin-left: 7rem;
+}
+
+@media only screen and (max-width: 480px)  {
+    .header {
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .conditions p {
+        padding: 1rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 850px)  {
+    .header {
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .header h1 {
+        text-align: center;
+    }
+
+    .header {
+        min-width: 300px;
+    }
+
+    .conditions p {
+        padding-right: 1rem;
+        text-align: justify;
+    }
+}
